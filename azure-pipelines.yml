@@ -63,21 +63,21 @@ steps:
     #isMandatory: false # Optional
     #distributionGroupId: # Optional
 
-- task: GooglePlayRelease@2
-  inputs:
-    apkFile: '**/*.apk'
-    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
-    track: 'internal'
-
-- task: GooglePlayPromote@2
-  inputs:
-    packageName: 'com.yourCompany.appPackageName'
-    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
-    sourceTrack: 'internal'
-    destinationTrack: 'alpha'
-
-- task: GooglePlayIncreaseRollout@1
-  inputs:
-    packageName: 'com.yourCompany.appPackageName'
-    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
-    userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
+#- task: GooglePlayRelease@2
+#  inputs:
+#    apkFile: '**/*.apk'
+#    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
+#    track: 'internal'
+#
+#- task: GooglePlayPromote@2
+#  inputs:
+#    packageName: 'com.example.android.architecture.blueprints.todomvp'
+#    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
+#    sourceTrack: 'internal'
+#    destinationTrack: 'alpha'
+#
+#- task: GooglePlayIncreaseRollout@1
+#  inputs:
+#    packageName: 'com.example.android.architecture.blueprints.todomvp'
+#    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
+#    userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
