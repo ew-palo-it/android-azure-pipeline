@@ -39,10 +39,13 @@ steps:
     apkFiles: '**/*.apk'
     apksign: true
     apksignerKeystoreFile: 'pipeline-android-production-keystore'
-    keystoreFile: 'pipeline-android-production-keystore'
     apksignerKeystorePassword: '$(apksignerKeystorePassword)'
     apksignerKeystoreAlias: 'key0'
     apksignerKeyPassword: '$(apksignerKeyPassword)'
+    keystoreFile: 'pipeline-android-production-keystore'
+    keystorePassword: '$(apksignerKeystorePassword)'
+    keystoreAlias: 'key0'
+    keyPassword: '$(apksignerKeyPassword)'
 #    jarsign: true
 #    jarsignerKeystoreFile: 'pipeline-android-production-keystore'
 #    jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
