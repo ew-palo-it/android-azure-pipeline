@@ -37,11 +37,16 @@ steps:
 - task: AndroidSigning@2
   inputs:
     apkFiles: '**/*.apk'
-    jarsign: true
-    jarsignerKeystoreFile: 'pipeline-android-production-keystore.keystore'
-    jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
-    jarsignerKeystoreAlias: 'key0'
-    jarsignerKeyPassword: '$(jarsignerKeyPassword)'
+    apksign: true
+    apksignerKeystoreFile: 'pipeline-android-production-keystore.keystore'
+    apksignerKeystorePassword: '$(jarsignerKeystorePassword)'
+    apksignerKeystoreAlias: 'key0'
+    apksignerKeyPassword: '$(jarsignerKeyPassword)'
+#    jarsign: true
+#    jarsignerKeystoreFile: 'pipeline-android-production-keystore.keystore'
+#    jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
+#    jarsignerKeystoreAlias: 'key0'
+#    jarsignerKeyPassword: '$(jarsignerKeyPassword)'
     zipalign: true
 
   # App Center distribute
