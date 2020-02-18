@@ -53,12 +53,6 @@ steps:
     apksignerKeystorePassword: '123456ab'
     apksignerKeystoreAlias: 'key0'
     apksignerKeyPassword: '123456ab'
-#    jarsign: true
-#    jarsignerKeystoreFile: 'pipeline-android-production-keystore'
-#    jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
-#    jarsignerKeystoreAlias: 'key0'
-#    jarsignerKeyPassword: '$(jarsignerKeyPassword)'
-    zipalign: true
 
   # App Center distribute
   # Distribute app builds to testers and users via Visual Studio App Center
